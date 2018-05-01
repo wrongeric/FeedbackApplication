@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const keys = require("./config/keys");
-require("./models/user");
+require("./models/user"); //order of require statements can result in errors
 require("./services/passport");
 
 // const authRoutes = require('./routes/authROutes');
