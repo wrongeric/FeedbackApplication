@@ -9,7 +9,6 @@
 //     .then(json => console.log(json));
 // }
 
-//async/await ES2017
 async function fetchAlbums() {
   const res = await fetch("https://rallycoding.herokuapp.com/api/music_albums");
   const json = await res.json();
@@ -18,3 +17,11 @@ async function fetchAlbums() {
 }
 
 fetchAlbums();
+
+//async/await ES2017
+// const fetchAlbums = async () => {
+//   const res = await fetch("https://rallycoding.herokuapp.com/api/music_albums");
+//   const json = await res.json();
+
+//   console.log(json);
+// };
