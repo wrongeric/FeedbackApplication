@@ -5,6 +5,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const keys = require("./config/keys");
 require("./models/user"); //order of require statements can result in errors
+require("./models/Survey");
 require("./services/passport");
 
 // const authRoutes = require('./routes/authRoutes');
